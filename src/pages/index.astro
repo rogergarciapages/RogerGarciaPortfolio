@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import { Image } from 'astro:assets';
 
 ---
 
@@ -17,11 +18,13 @@ import Layout from '../layouts/Layout.astro';
 				</p>
 			</div>
 			<div class="relative group w-full md:w-2/6">
-				<div class="absolute inset-0 rounded-3xl transition-all duration-300 group-hover:opacity-75"></div>
-				<img 
-					src="/roger-portfolio-noshadow.png" 
-					alt="Roger Garcia in toy packaging" 
-					class="w-full rounded-2xl transition-transform duration-300 group-hover:scale-[1.02]"
+				<Image 
+					src="/roger-portfolio.png"
+					alt="Roger in a toy blister packaging"
+					width={800}
+					height={800}
+					loading="eager"
+					class="rounded-xl transition-transform duration-300 group-hover:scale-105"
 				/>
 			</div>
 		</div>
