@@ -1,4 +1,38 @@
-# Astro Starter Kit: Basics
+# Roger's Portfolio
+
+A minimalist, Swiss design-inspired portfolio built with Astro.js. Features a bold, contemporary aesthetic with striking typography and a focus on content hierarchy.
+
+## 🚀 Tech Stack
+
+- **Framework:** [Astro.js](https://astro.build)
+- **Styling:** [Tailwind CSS](https://tailwindcss.com)
+- **Typography:** Inter font family
+- **Design:** Swiss design principles with a modern twist
+
+## 🛠️ Development
+
+```bash
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+
+# Build for production
+npm run build
+```
+
+## 🎨 Design Features
+
+- Responsive layout
+- Dark/Light mode toggle
+- Bold typography with custom tracking and leading
+- Minimalist black and white aesthetic
+- Smooth transitions and animations
+
+## 📝 License
+
+MIT License - feel free to use this code for your own portfolio!
 
 ```sh
 npm create astro@latest -- --template basics

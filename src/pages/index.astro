@@ -1,11 +1,84 @@
 ---
-import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
-<Layout>
-	<Welcome />
+<Layout title="Portfolio">
+	<section class="min-h-screen flex flex-col justify-center py-section">
+		<h1 class="text-huge md:text-display font-bold mb-8 leading-none tracking-[-0.075em]">
+			hello,<br/>
+			bonjour, 今日は<span class="text-[#FFA500] animate-ping rounded-full">.</span>
+			</span>
+		</h1>
+		<p class="text-xl md:text-3xl font-light max-w-3xl">
+			My name is Roger.<br/> 
+			I am a Data Analyst, a seasoned SEO specialist, a Python developer, and all round Full-Stack Digital Craftsman with a love for automations.
+		</p>
+	</section>
+
+	<section class="py-section">
+		<h2 class="text-statement font-light mb-16">SELECTED WORK</h2>
+		<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+			<article class="group cursor-pointer">
+				<div class="aspect-[4/3] bg-gray-100 dark:bg-gray-900 mb-4 overflow-hidden">
+					<div class="w-full h-full flex items-center justify-center text-4xl font-bold opacity-20">
+						01
+					</div>
+				</div>
+				<h3 class="text-2xl font-semibold mb-2">Project Title</h3>
+				<p class="font-light">Brief project description showcasing the key aspects and technologies used.</p>
+			</article>
+
+			<article class="group cursor-pointer">
+				<div class="aspect-[4/3] bg-gray-100 dark:bg-gray-900 mb-4 overflow-hidden">
+					<div class="w-full h-full flex items-center justify-center text-4xl font-bold opacity-20">
+						02
+					</div>
+				</div>
+				<h3 class="text-2xl font-semibold mb-2">Project Title</h3>
+				<p class="font-light">Brief project description showcasing the key aspects and technologies used.</p>
+			</article>
+		</div>
+	</section>
+
+	<section class="py-section">
+		<h2 class="text-statement font-light mb-16">ABOUT</h2>
+		<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+			<div>
+				<p class="text-xl font-light mb-8">
+					A developer with a passion for minimal design and clean code. 
+					Specializing in creating modern, user-centric digital experiences.
+				</p>
+				<p class="text-xl font-light">
+					Currently available for freelance projects and collaborations.
+				</p>
+			</div>
+			<div>
+				<h3 class="text-xl font-semibold mb-4">EXPERTISE</h3>
+				<ul class="space-y-2 font-light">
+					<li>Frontend Development</li>
+					<li>UI/UX Design</li>
+					<li>Web Applications</li>
+					<li>Responsive Design</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+
+	<section class="py-section">
+		<h2 class="text-statement font-light mb-16">CONTACT</h2>
+		<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+			<div>
+				<p class="text-xl font-light mb-8">
+					Let's work together to bring your ideas to life.
+				</p>
+				<a 
+					href="mailto:your.email@example.com" 
+					class="inline-block text-xl font-semibold border-b-2 border-current pb-1 hover:opacity-70 transition-opacity"
+				>
+					your.email@example.com
+				</a>
+			</div>
+		</div>
+	</section>
 </Layout>
