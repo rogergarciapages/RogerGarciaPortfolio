@@ -4,19 +4,30 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title="Portfolio">
-	<section class="min-h-screen flex flex-col justify-center py-section">
-		<h1 class="text-huge md:text-display font-bold mb-8 leading-none tracking-[-0.075em]">
-			hello,<br/>
-			bonjour, 今日は<span class="text-[#FFA500] animate-ping rounded-full">.</span>
-			</span>
-		</h1>
-		<p class="text-xl md:text-3xl font-light max-w-3xl">
-			My name is Roger.<br/> 
-			I am a Data Analyst, a seasoned SEO specialist, a Python developer, and all round Full-Stack Digital Craftsman with a love for automations.
-		</p>
+	<section class="min-h-screen flex flex-col justify-center py-12">
+		<div class="flex flex-col md:flex-row items-start gap-12 px-6">
+			<div class="flex-1">
+				<h1 class="text-huge md:text-display font-bold mb-8 leading-none tracking-[-0.075em]">
+					hello,<br/>
+					bonjour, 今日は<span class="text-[#FFA500] animate-ping rounded-full">.</span>
+				</h1>
+				<p class="text-xl md:text-3xl font-light max-w-4xl">
+					My name is Roger.<br/> 
+					I am a Data Analyst, a seasoned SEO specialist, a Python developer, and all round Full-Stack Digital Craftsman with a love for automations.
+				</p>
+			</div>
+			<div class="relative group w-full md:w-2/6">
+				<div class="absolute inset-0 rounded-3xl transition-all duration-300 group-hover:opacity-75"></div>
+				<img 
+					src="/roger-portfolio-noshadow.png" 
+					alt="Roger Garcia in toy packaging" 
+					class="w-full rounded-2xl transition-transform duration-300 group-hover:scale-[1.02]"
+				/>
+			</div>
+		</div>
 	</section>
 
-	<section class="py-section">
+	<section class="py-12 px-6">
 		<h2 class="text-statement font-light mb-16">SELECTED WORK</h2>
 		<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
 			<article class="group cursor-pointer">
